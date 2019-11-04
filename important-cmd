@@ -1,0 +1,11 @@
+Public address of the key:   0x27BEC6Ad157FD1C38fCD7175e4F7398E63cF3368
+Path of the secret key file: ethdata/keystore/UTC--2019-10-16T05-41-58.096183656Z--27bec6ad157fd1c38fcd7175e4f7398e63cf3368
+
+Public address of the key:   0xf0B13fA6C28E75257C311f5E53fc393784a54F4B
+Path of the secret key file: ethdata/keystore/UTC--2019-10-16T07-26-04.858570124Z--f0b13fa6c28e75257c311f5e53fc393784a54f4b
+
+--allow-insecure-unlock 
+
+geth --datadir="ethdata" --networkid 15 --nodiscover console --unlock 52ced5207daddd2081f623cd3c4bc2ef30b8447f --rpc --rpcport "8000" --rpcaddr "0.0.0.0" --rpccorsdomain "*" --rpcapi "eth,net,web3,miner,debug,personal,rpc"
+
+admin.nodeInfo.enode

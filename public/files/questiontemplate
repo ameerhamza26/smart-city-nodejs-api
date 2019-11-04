@@ -1,0 +1,56 @@
+<div id="main-question-div-number"><div class="form-group"> 
+    <input type="text" id="question-id-number"  hidden  > 
+    <label for="title" class="col-md-3 control-label">Select question type</label> 
+    <div class="col-md-9"> 
+        <select class="form-control" name="causeId" id="survey-quest-number"  onchange="getQuestionTypeChange(number)"> 
+                <option value="TEXT"> Description </option> 
+                <option value="MCQ">Choose from option</option> 
+        </select> 
+    </div> 
+  </div> 
+  <div id="questions-div-number" class="form-group" > 
+      <label for="title" class="col-md-3 control-label">Add question</label> 
+      <div class="col-md-9"> 
+          <input id="survey-question-text-number" type="text" class="form-control" name="title" placeholder="Add question"> 
+      </div> 
+  </div> 
+  <div id="options-div-number" style="display: none;"> 
+      <div class="form-group" > 
+          <label for="title" class="col-md-3 control-label">Add option1</label> 
+          <div class="col-md-9"> 
+              <input id="survey-question-number-option-1" type="text" class="form-control" name="title" placeholder="Add option1"> 
+          </div> 
+      </div> 
+      <div class="form-group">  <label for="title" class="col-md-3 control-label">Add option2</label> 
+          <div class="col-md-9"> 
+              <input id="survey-question-number-option-2" type="text" class="form-control" name="title" placeholder="Add option2"> 
+          </div> 
+      </div> 
+      <div class="form-group"> <label for="title" class="col-md-3 control-label">Add option3</label> 
+          <div class="col-md-9"> 
+              <input id="survey-question-number-option-3" type="text" class="form-control" name="title" placeholder="Add option3"> 
+          </div> 
+      </div> 
+      <div class="form-group"> 
+          <label for="title" class="col-md-3 control-label">Add option4</label> 
+          <div class="col-md-9"> 
+              <input id="survey-question-number-option-4" type="text" class="form-control" name="title" placeholder="Add option4"> 
+          </div> 
+      </div> 
+  </div> 
+  <div class="form-group" id="question-button-div-number"> 
+  <div class="col-md-offset-3 col-md-9"> 
+      <button id="survey-question-submit-number" type="submit" class="btn btn-primary" onclick="addMoreQuestion()"> 
+          <i class="icon-hand-right"></i> &nbsp Add more question</button> 
+  </div> 
+  <div class="col-md-offset-3 col-md-9"> 
+      <button id="survey-final-submit" type="submit" class="btn btn-info survey-final-submit" onclick="submitQuestions()"> 
+          <i class="icon-hand-right"></i> &nbsp Submit</button> 
+  </div> 
+  </div> 
+  <div id="delete-button-div-number" style="display:none"> 
+      <div class="col-md-offset-3 col-md-9"> 
+      <button id="survey-question-delete-number" type="submit" class="btn btn-primary" onclick="deleteQuestion(number)"> 
+          <i class="icon-hand-right"></i> &nbsp Delete this question </button> 
+      </div> 
+  </div></div>

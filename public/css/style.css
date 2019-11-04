@@ -1,0 +1,136 @@
+/* CSS Style Sheet */
+
+/* Written by Salman Ahmed */
+
+/* Date: 14 March 2013 */
+
+.navbar-brand > img {
+    height: 46px;
+}
+
+.list-group-item-heading, .txt-red {
+    color: #9d1f62;
+}
+
+.list-group-item-text {
+    color: #333;
+    word-break: break-word;
+}
+
+.lead {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.bg-dark {
+    background-color: #9d1e63 !important;
+}
+
+.full-page {
+    min-height: calc(100vh - 396px);
+    position: relative;
+    padding: 30px 15px;
+}
+.full-page-outer {
+    min-height: calc(100vh - 54px);
+    position: relative;
+    padding: 30px 15px 0;
+}
+footer {
+    text-align: center;
+    width: 100%;
+    background-color: #333;
+    padding: 15px 15px;
+}
+footer p {
+    color: #fff;
+    margin: 0;
+}
+a.banner-link {
+    margin: 30px 0 0;
+    color: #fff;
+    text-decoration: none;
+}
+/* Sidemenu */
+
+ul.list-sidemenu li {
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+ul.list-sidemenu li:last-child {
+    border:none;
+}
+
+ul.list-sidemenu {
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+ul.list-sidemenu li a {
+    display:block;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+ul.list-sidemenu li a:hover, ul.list-sidemenu li a.selected {
+    background-color: #9d1f62;
+    color:#fff;
+}
+
+ul.list-sidemenu li:first-child a {
+    border-radius: 4px 4px 0 0;
+}
+
+ul.list-sidemenu li:last-child a {
+    border-radius: 0 0 4px 4px;
+}
+
+
+
+.list-group-item {
+    margin-bottom: 15px;
+    border: none !important;
+    border-radius: 0 !important;
+    background-color: #f4f4f4;
+}
+
+.svg-ico {
+    width: 32px;
+    margin-right: 10px;
+}
+.txt-icon {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+
+.banner {
+    background: #666 url(../../images/banner.png) no-repeat center center;
+    height: 270px;
+    background-size: cover;
+    margin-top: 72px;
+}
+
+.lead {
+    color: #fff;
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-top: 80px;
+}
+
+
+a.banner-link img {
+    width: 18px;
+    margin-right: 10px;
+    position: relative;
+    top: -2px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
