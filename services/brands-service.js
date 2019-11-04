@@ -5,6 +5,7 @@ const BrandUser = require('../models/brands').BrandUsers
 const User = require('../models/users').User;
 const utils = require('../utils/util');
 const emails = require('../emails/temaplates')
+const config = require('../config')
 
 exports.create = async (brand, user, logo, location, done)=> {
     try {
@@ -144,7 +145,7 @@ exports.availOffer = async (userid, offerid, done) => {
         if (points >= offer.points){
             console.log(userid, offer.points)
             await smartCityContract.methods.minusPoints(userid, offer.points).send({
-                from: '0xf0B13fA6C28E75257C311f5E53fc393784a54F4B',
+                from: config.blockChainMainAccount.id,
                 gas: '3000000'
               })
 

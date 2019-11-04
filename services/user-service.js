@@ -106,7 +106,7 @@ exports.createUser = async (user, loc, token, done) => {
         addr = await web3.eth.personal.newAccount('123456')
         
         await smartCityContract.methods.createUser(addr,0).send({
-            from: '0xf0B13fA6C28E75257C311f5E53fc393784a54F4B',
+            from: config.blockChainMainAccount.id,
             gas: '3000000'
           })
 
@@ -150,7 +150,7 @@ exports.signup = async (user, done) => {
         addr = await web3.eth.personal.newAccount('123456')
 
         await smartCityContract.methods.createUser(addr,0).send({
-            from: '0xf0B13fA6C28E75257C311f5E53fc393784a54F4B',
+            from: config.blockChainMainAccount.id,
             gas: '3000000'
           })
         

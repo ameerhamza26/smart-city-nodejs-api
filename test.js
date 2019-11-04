@@ -1,6 +1,7 @@
 const Web3 = require('web3')
 const web3 = new Web3(new Web3.providers.HttpProvider("http://192.168.56.107:8000"))
 const compiledSmartCity = require('./ethereum/build/SmartCityContract.json')
+const config = require('./config')
 
 const test = async () => {
     accounts = await web3.eth.getAccounts()
@@ -14,7 +15,7 @@ const test = async () => {
     console.log(smartCity.options.address)
      try {      
       await deployedContract.methods.createUser('0xD1dEEB30Ee10c6B62e0b14f138D25B9d0c064c14',0).send({
-        from: '0xf0B13fA6C28E75257C311f5E53fc393784a54F4B',
+        from: config.blockChainMainAccount.id,
         gas: '3000000'
       })
 
@@ -25,7 +26,7 @@ const test = async () => {
 
      try {
         await deployedContract.methods.createUser('0x5Ee33868Ec2D434C917335a4209564CA64679df6',0).send({
-            from: '0xf0B13fA6C28E75257C311f5E53fc393784a54F4B',
+            from: config.blockChainMainAccount.id,
             gas: '3000000'
           })
      } catch(err) {
@@ -34,7 +35,7 @@ const test = async () => {
 
      try {
         await deployedContract.methods.createUser('0x89346EBB0fa2D6dC634bB624458EA868df35c00b',0).send({
-            from: '0xf0B13fA6C28E75257C311f5E53fc393784a54F4B',
+            from: config.blockChainMainAccount.id,
             gas: '3000000'
           })
      } catch(err) {
@@ -44,7 +45,7 @@ const test = async () => {
 
      try {
         await deployedContract.methods.createUser('0xf316776d44c378FDBc33cdB3d4359885f36DB15f',0).send({
-            from: '0xf0B13fA6C28E75257C311f5E53fc393784a54F4B',
+            from: config.blockChainMainAccount.id,
             gas: '3000000'
           })
     
@@ -68,7 +69,7 @@ const test = async () => {
       res = await deployedContract.methods.createPost('abcd', 'path1', 'path2', 'sakhi hassan', '23.243434', '67.2423423', 10, '0xf316776d44c378FDBc33cdB3d4359885f36DB15f', 
       ['0xD1dEEB30Ee10c6B62e0b14f138D25B9d0c064c14', '0x5Ee33868Ec2D434C917335a4209564CA64679df6', '0x89346EBB0fa2D6dC634bB624458EA868df35c00b'], 2)
       .send({
-          from: '0xf0B13fA6C28E75257C311f5E53fc393784a54F4B',
+          from: config.blockChainMainAccount.id,
           gas: '3000000'
       })
 
@@ -94,13 +95,13 @@ const test = async () => {
 
     await deployedContract.methods.approvePost(1, '0xD1dEEB30Ee10c6B62e0b14f138D25B9d0c064c14')
     .send({
-          from: '0xf0B13fA6C28E75257C311f5E53fc393784a54F4B',
+          from: config.blockChainMainAccount.id,
           gas: '3000000'
       })
 
     await deployedContract.methods.approvePost(1, '0x5Ee33868Ec2D434C917335a4209564CA64679df6')
     .send({
-          from: '0xf0B13fA6C28E75257C311f5E53fc393784a54F4B',
+          from: config.blockChainMainAccount.id,
           gas: '3000000'
       })
 
@@ -119,7 +120,7 @@ const test = async () => {
     }
 
     await deployedContract.methods.minusPoints('0xD1dEEB30Ee10c6B62e0b14f138D25B9d0c064c14', 1).send({
-      from: '0xf0B13fA6C28E75257C311f5E53fc393784a54F4B',
+      from: config.blockChainMainAccount.id,
       gas: '3000000'
     })
 

@@ -48,7 +48,7 @@ exports.create = async (post, location, activity, created_by, imagesBefore, imag
         res = await smartCityContract.methods.createPost(post.description, beforeImages[0], afterImages[0], location.address, location.latitude.toString(), 
         location.longitude.toString(), activity.points, created_by, blockChainIds, 2)
         .send({
-            from: '0xf0B13fA6C28E75257C311f5E53fc393784a54F4B',
+            from: config.blockChainMainAccount.id,
             gas: '3000000'
         })
 
@@ -131,7 +131,7 @@ exports.approvePost = async (account_id, post_id, done) => {
         smartCityContract = await utils.getSmartCityContract();
         await smartCityContract.methods.approvePost(post_id, account_id)
         .send({
-              from: '0xf0B13fA6C28E75257C311f5E53fc393784a54F4B',
+              from: config.blockChainMainAccount.id,
               gas: '3000000'
           })
         
@@ -253,7 +253,7 @@ exports.availCoins = async (totalPoints, expectedPoints, coins, account_id, done
         done('not enough total points', null)
     } else {
         tx = await web3.eth.sendTransaction({
-            from: '0xf0b13fa6c28e75257c311f5e53fc393784a54f4b',
+            from: config.blockChainMainAccount.id,
             to: account_id,
             value: web3.utils.toWei(coins, 'ether')
         })
