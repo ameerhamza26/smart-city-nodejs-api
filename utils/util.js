@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer')
 const Email = require('email-templates');
 const compiledSmartCityContract = require('../ethereum/build/SmartCityContract.json')
 const Web3 = require('web3')
-const web3 = new Web3(new Web3.providers.HttpProvider("http://192.168.56.107:8000"))
+const web3 = new Web3(new Web3.providers.HttpProvider(config.blockChainConfig.host))
 var transporter
 
 exports.generateRandomBytes = (size) => {
