@@ -45,7 +45,7 @@
     "promise-mysql": "^3.2.1",
     "pug": "^2.0.4",
     "req-flash": "0.0.3",
-    "sequelize": "^4.44.3",
+    "sequelize": "^5.15.1",
     "socket.io": "^2.0.3",
     "solc": "^0.4.17",
     "then-busboy": "^1.4.0",
