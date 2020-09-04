@@ -25,7 +25,7 @@
     "ethereumjs-tx": "^2.1.0",
     "exceljs": "^1.4.6",
     "express": "^4.14.1",
-    "express-fileupload": "^0.1.1",
+    "express-fileupload": "^1.1.10",
     "express-session": "^1.15.1",
     "express-winston": "^4.0.1",
     "fcm-node": "^1.2.1",
