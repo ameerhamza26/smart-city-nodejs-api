@@ -46,7 +46,7 @@
     "pug": "^2.0.4",
     "req-flash": "0.0.3",
     "sequelize": "^4.44.3",
-    "socket.io": "^2.0.3",
+    "socket.io": "^2.4.0",
     "solc": "^0.4.17",
     "then-busboy": "^1.4.0",
     "truffle-hdwallet-provider": "^1.0.15",
