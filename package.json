@@ -43,7 +43,7 @@
     "pg": "^7.12.1",
     "promise": "^8.0.3",
     "promise-mysql": "^3.2.1",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "req-flash": "0.0.3",
     "sequelize": "^4.44.3",
     "socket.io": "^2.0.3",
